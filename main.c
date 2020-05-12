@@ -22,8 +22,8 @@ double izracunajPovrsinu(double a, double b, double c, int izbor) {
         povrsina = a * b * sin(c) / 2;
 
     } else if (izbor == 3) {
-        c = c / oneRadInDeg;
         b = b / oneRadInDeg;
+        c = c / oneRadInDeg;
         povrsina = a * a * sin(b) * sin(c) / (2 * sin(3.14159 - b - c));
     }
 
